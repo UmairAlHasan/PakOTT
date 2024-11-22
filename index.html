@@ -1,19 +1,13 @@
 <!DOCTYPE html>
-<!-- Coding By CodingNepal - www.codingnepalweb.com -->
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="google-site-verification" content="QI7FokkIKAtf0bORCdoheJRh7xXP4oS14ckGy9m-dOg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="./asssets/favicon-32x32.png" sizes="32x32" />
-    <link rel="icon" href="./asssets/android-chrome-192x192.png" sizes="192x192" />
-    <link rel="apple-touch-icon" href="./asssets/apple-touch-icon.png" />
   <title>PakOTT.Com</title>
-  <!-- Linking Unicons For Icons -->
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
   <link rel="stylesheet" href="style.css">
 </head>
-<body class="sidebar-hidden">
+<body>
   <div class="container">
     <!-- Header / Navbar -->
     <header>
@@ -23,23 +17,23 @@
             <i class="uil uil-bars"></i>
           </button>
           <a href="#" class="nav-logo">
-            <img src="./asssets/android-chrome-192x192.png" alt="Logo" class="logo-image">
+            <img src="./assets/android-chrome-192x192.png" alt="Logo" class="logo-image">
             <h2 class="logo-text">PakOTT</h2>
           </a>
         </div>
-        
+
         <div class="nav-section nav-center">
           <form action="searchForm" class="search-form">
-    <input type="search" placeholder="Search" class="search-input" required>
-    <button type="submit" class="nav-button search-button">
-        <i class="uil uil-search"></i>
-    </button>
-</form>
+            <input type="search" placeholder="Search" class="search-input" required>
+            <button type="submit" class="nav-button search-button">
+              <i class="uil uil-search"></i>
+            </button>
+          </form>
           <button class="nav-button mic-button">
             <i class="uil uil-microphone"></i>
           </button>
         </div>
-        
+
         <div class="nav-section nav-right">
           <button class="nav-button search-button">
             <i class="uil uil-search"></i>
@@ -47,13 +41,26 @@
           <button class="nav-button theme-button">
             <i class="uil uil-moon"></i>
           </button>
-          <a href="./pages/user.html">
-          <img src="./asssets/android-chrome-192x192.png" alt="User Image" class="user-image">
-          </a>
+
+          <!-- Profile Dropdown -->
+          <div class="profile-menu">
+            <img src="./assets/android-chrome-192x192.png" alt="User Image" class="user-image" id="profileToggle">
+            <div class="dropdown hidden" id="profileDropdown">
+              <button class="profile-action" id="loginAction">
+                <i class="uil uil-signin"></i> Login with Google
+              </button>
+              <button class="profile-action hidden" id="profileAction">
+                <i class="uil uil-user"></i> Profile
+              </button>
+              <button class="profile-action hidden" id="logoutAction">
+                <i class="uil uil-signout"></i> Logout
+              </button>
+            </div>
+          </div>
         </div>
       </nav>
     </header>
-    
+
     <!-- Main Layout -->
     <main class="main-layout">
       <div class="screen-overlay"></div>
@@ -65,11 +72,11 @@
             <i class="uil uil-bars"></i>
           </button>
           <a href="#" class="nav-logo">
-            <img src="./asssets/android-chrome-192x192.png" alt="Logo" class="logo-image">
+            <img src="./assets/android-chrome-192x192.png" alt="Logo" class="logo-image">
             <h2 class="logo-text">PakOTT</h2>
           </a>
         </div>
-  
+
         <div class="links-container">
           <div class="link-section">
             <a href="index.html" class="link-item">
@@ -80,7 +87,7 @@
             </a>
           </div>
           <div class="section-separator"></div>
-  
+
           <div class="link-section">
             <h4 class="section-title">You</h4>
             <a href="./pages/user.html" class="link-item">
@@ -94,7 +101,7 @@
             </a>
           </div>
           <div class="section-separator"></div>
-          
+
           <div class="link-section">
             <h4 class="section-title">Explore</h4>
             <a href="#" class="link-item">
@@ -111,7 +118,7 @@
             </a>
           </div>
           <div class="section-separator"></div>
-  
+
           <div class="link-section">
             <h4 class="section-title">Support</h4>
             <a href="./pages/privacy-policy.html" class="link-item">
@@ -125,7 +132,7 @@
             </a>
           </div>
           <div class="section-separator"></div>
-  
+
           <div class="link-section">
             <a href="./pages/coming-soon.html" class="link-item">
               <i class="uil uil-setting"></i> Settings
@@ -142,7 +149,7 @@
           </div>
         </div>
       </aside>
-  
+
       <div class="content-wrapper">
         <!-- Category List -->
         <div class="category-list">
@@ -152,14 +159,13 @@
           <button class="category-button">Web Series</button>
           <button class="category-button">News</button>
         </div>
-        
+
         <div class="search-container">
           <input type="text" id="searchInput" placeholder="Search...">
-      </div>
+        </div>
 
         <!-- Video List -->
         <div class="video-list">
-          
           <a href="./post/Salaar.html" class="video-card">
             <div class="thumbnail-container">
               <img src="https://image.tmdb.org/t/p/original/7SQAFFP8dQCX60uvLDzizUoUC2L.jpg" alt="Video Thumbnail" class="thumbnail">
@@ -167,7 +173,7 @@
               <p class="hd-badge">HD</p>
             </div>
             <div class="video-info">
-              <img src="./asssets/android-chrome-192x192.png" alt="Channel Logo" class="icon">
+              <img src="./assets/android-chrome-192x192.png" alt="Channel Logo" class="icon">
               <div class="video-details">
                 <h2 class="title">The Angel Next Door Spoils Me Rotten</h2>
                 <p class="channel-name">Urdu Stream</p>
@@ -175,51 +181,12 @@
               </div>
             </div>
           </a>
-
-          <a href="#" class="video-card">
-            <div class="thumbnail-container">
-              <img src="https://image.tmdb.org/t/p/original/7SQAFFP8dQCX60uvLDzizUoUC2L.jpg" alt="Video Thumbnail" class="thumbnail">
-              <p class="ep-badge">Ep 11/12</p>
-              <p class="hd-badge">HD</p>
-            </div>
-            <div class="video-info">
-              <img src="./asssets/android-chrome-192x192.png" alt="Channel Logo" class="icon">
-              <div class="video-details">
-                <h2 class="title">The Angel Next Door Spoils Me Rotten</h2>
-                <p class="channel-name">Urdu Stream</p>
-                <p class="views">1K Views • 1 sec ago</p>
-              </div>
-            </div>
-          </a>
-
-          <a href="#" class="video-card">
-            <div class="thumbnail-container">
-              <img src="https://image.tmdb.org/t/p/original/7SQAFFP8dQCX60uvLDzizUoUC2L.jpg" alt="Video Thumbnail" class="thumbnail">
-              <p class="ep-badge">Ep 11/12</p>
-              <p class="hd-badge">HD</p>
-            </div>
-            <div class="video-info">
-              <img src="./asssets/android-chrome-192x192.png" alt="Channel Logo" class="icon">
-              <div class="video-details">
-                <h2 class="title">The Angel Next Door Spoils Me Rotten</h2>
-                <p class="channel-name">Urdu Stream</p>
-                <p class="views">1K Views • 1 sec ago</p>
-              </div>
-            </div>
-          </a>
-          
         </div>
-        <hr class="pline">
-        <p class="p-para">PakOTT does not retain any files on its server. Rather, it solely provides links to media content hosted by third-party services.</p>
         <footer>
           &copy; 2024 PakOTT. All rights reserved.
         </footer>
       </div>
     </main>
   </div>
-
-  
-  <!-- Linking custom script -->
-  <script src="script.js"></script>
 </body>
 </html>

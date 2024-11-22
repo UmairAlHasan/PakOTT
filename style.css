@@ -382,6 +382,56 @@ footer {
   color: #fff;
 }
 
+
+/* Profile dropdown styling */
+.profile-menu {
+  position: relative;
+  display: inline-block;
+}
+
+.user-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background: #1e1e1e;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  min-width: 150px;
+}
+
+.profile-action {
+  color: #fff;
+  background: none;
+  border: none;
+  text-align: left;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  border-bottom: 1px solid #333;
+}
+
+.profile-action:last-child {
+  border-bottom: none;
+}
+
+.profile-action:hover {
+  background: #333;
+}
+
+.hidden {
+  display: none;
+}
+
 /* Responsive media code for small devices */
 @media (max-width: 768px) {
   .navbar .nav-center {
@@ -441,5 +491,45 @@ footer {
     font-size: 16px;
     border: 1px solid #000000;
     border-radius: 5px;
+  }
+}
+
+/* Responsive Styling for Mobile */
+@media screen and (max-width: 768px) {
+  .profile-menu {
+    margin-top: 10px;
+  }
+
+  .user-image {
+    width: 35px;
+    height: 35px;
+  }
+
+  .dropdown {
+    top: 40px; /* Adjust dropdown position for smaller screens */
+    min-width: 120px;
+  }
+
+  .profile-action {
+    font-size: 12px;
+    padding: 8px;
+  }
+}
+
+/* Extra small screens */
+@media screen and (max-width: 480px) {
+  .user-image {
+    width: 30px;
+    height: 30px;
+  }
+
+  .dropdown {
+    top: 35px;
+    min-width: 100px;
+  }
+
+  .profile-action {
+    font-size: 10px;
+    padding: 6px;
   }
 }
